@@ -1,0 +1,21 @@
+//字形
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC&family=Noto+Sans+TC:wght@400;700&family=Yeseva+One&display=swap');
+@import "./components/icofont/icofont.min.css";
+//BS
+@import "../../node_modules/bootstrap/scss/functions";
+//變數
+@import './helpers/variables';
+@import './helpers/utilities';
+@import './helpers/mixin';
+@import "../../node_modules/bootstrap";
+
+@import './components/btn-primary';
+
+@import './base/base';
+
+@import './layout/header.scss';
+@import './layout/footer.scss';
+
+
+@import './pages/index.scss';
+@import './pages/login';

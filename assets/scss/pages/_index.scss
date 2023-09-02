@@ -1,0 +1,115 @@
+.index-title {
+  font-size: 100px;
+}
+
+.banner{
+  font-family: "Noto Serif TC";
+  img{
+    width: 100%;
+    height: 350px;
+    object-fit:cover;
+    @include pc {
+      height: 518px;
+    }
+  }
+  &date{
+    top: 32px;
+    left: 40px;
+    width: 113px;
+    font-size: 32px;
+    @include pc {
+      font-size: 64px;
+      width: 373px;
+      top: 80px;
+      left: 48px;
+    }
+  }
+  &title{
+    bottom: 24px;    
+  }
+}
+
+
+
+.h2-transform {
+  transform: translate(-50%, -50%) rotate(-4deg);
+}
+.activity{
+  li {
+    &:nth-child(2n) {
+      transform:rotate(2deg);
+    }
+    &:nth-child(3) {
+      transform:rotate(-2deg);
+    }
+  }
+}
+.item {
+  img {
+    object-fit: cover;
+    height: 274px;
+  }
+}
+
+.mySwiper{
+  .swiper-wrapper {
+    transition-timing-function: linear;
+  }
+  .swiper-slide {
+    letter-spacing: 3.2px;
+    width: auto;
+    
+  }
+}
+.recent{
+  .start{
+    width: 20px;
+    height: 20px;
+  
+    @include pc {
+    width: 24px;
+    height: 24px;
+    }
+  }
+  .pic{
+    height: 255px;
+    object-fit: cover;
+    &:hover{
+      opacity:0.8 ;
+    }
+  }
+}
+
+.ONLINE{
+  margin-bottom: 32px;
+  @include pc{
+    margin-bottom: 60px;
+  }
+  //../assets/images/2023week6/event/online.jpg
+  .onlinebg{
+    background-image: url(/assets/images/2023week6/event/online.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height:317px;
+    @include pc{
+      min-width: auto;
+    }
+  }
+  .tag{
+    border: 1px solid $primary;
+    border-left: 4px solid $primary;
+  }
+}
+
+
+// .swiper-slide {
+//   padding-top: 24px;
+//   padding-bottom: 24px;
+  
+//   font-weight: 700;
+//   letter-spacing: 3.2px;
+//   width: auto;
+//   color: #FBFF22;
+//   background: #000;
+// }

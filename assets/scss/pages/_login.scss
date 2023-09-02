@@ -1,0 +1,6 @@
+.loginmain{
+    padding-top: 24px;
+    @include pc {
+        padding-top: 60px;
+    }
+}

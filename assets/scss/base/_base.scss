@@ -1,0 +1,64 @@
+*,
+*:after,
+*:before{
+    box-sizing: border-box;
+}
+body{
+    font-family: Yeseva One,"Noto Serif TC","Noto Sans TC",cursive,serif;
+    background-color: $bg-color;
+}
+img, svg {
+    max-width: 100%;
+    vertical-align: middle;
+}
+a{
+    text-decoration: none;
+}
+
+.bgcolor{
+    background-color: $bg-color;
+}
+.px58{
+    padding-left: 58px;
+    padding-right: 58px;
+}
+.py35{
+    padding-top: 35px;
+    padding-bottom: 35px;
+}
+.py60{
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+.pt38{
+    padding-top: 38px;
+}
+.fs48{
+    font-size: 24px;
+    @include pc{
+    font-size: 48px;
+    }
+}
+.fs60{
+    font-size: 60px;
+}
+.mt60{
+    margin-top: 60px;
+}
+.mt129{
+    margin-top: 129px;
+}
+.mb175{
+    margin-bottom: 175px;
+}
+.w-32{
+    width: 32px;
+}
+
+.font-content {
+    font-family: 'Noto Sans TC', serif;
+}
+
+.font-serif{
+    font-family: 'Noto Serif TC', serif;
+}

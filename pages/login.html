@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<html>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="../assets/images/2023week6/logo.png" type="image/x-icon">
+    <title>7TAO 活動訂票網</title>    
+</html>
+<body>
+    <!-- Include the header layout -->
+    <%- include('./layout/header'); -%>
+    <section class="mt129 mx-0">
+        <div class="mb175 container">
+            <div class="loginmain text-center">
+                <div class="col-lg-4 mx-auto">
+                    <img src="../assets/images/2023week6/sparkler.png" alt="sparkler" class="w-32">
+                    <h3 class="fs-4 fw-bolder mb-3 mt-3">會員登入</h3>
+                    <form class="needs-validation" novalidate>
+                        <div class="mb-3  text-start">
+                            <label for="validationCustom01" class="form-label">帳號</label>
+                            <input type="text" class="rounded-0 form-control" id="validationCustom01" placeholder="請輸入帳號"  p required>
+                            <div class="invalid-feedback">請輸入帳號</div>
+                        </div>
+                        <div class="mb-lg-5 mb-4 text-start">
+                            <label for="validationCustom02" class="form-label">密碼</label>
+                            <input type="text" class="rounded-0 form-control" id="validationCustom02" placeholder="請輸入密碼" required>
+                            <div class="invalid-feedback">請輸入密碼</div>
+                        </div>
+                        <div class="">
+                            <button class="btn btn-primary w-100 py-2 fs-7 fs-lg-5 co font-content submitBtn rounded-0" type="submit">登入   >></button>
+                        </div>
+                        </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <%- include('./layout/footer'); -%>
+    <script type="module" src="../main.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <script>
+        // 每個有 .needs-validation 的 <form> 元素，觸發 submit 事件時，
+        // 將該元素加入 class 'was-validated'
+        $('.needs-validation').each(function (index) {
+            $(this).on('submit', function (e) {
+                e.preventDefault();
+                $(this).addClass('was-validated');
+            });
+        });
+    </script>
+</body>
+</html>
