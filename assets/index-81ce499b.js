@@ -1,0 +1,1 @@
+import"./main-95a9f7b2.js";import e from"https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.mjs";new e(".mySwiper",{speed:5e3,allowTouchMove:!1,slidesPerView:"auto",autoplay:{delay:0,disableOnInteraction:!1},loop:!0});
